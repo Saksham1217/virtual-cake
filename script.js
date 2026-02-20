@@ -1,15 +1,6 @@
 let candlesBlown = false;
 let cakeCut = false;
 
-function setMessage() {
-  let name = document.getElementById("nameInput").value;
-  if (name.trim() !== "") {
-    document.getElementById("message").innerText =
-      "All the best " + name +
-      " 🌍✨ May your internship journey be amazing!";
-  }
-}
-
 /* Blow candles */
 function startBlowing() {
   navigator.mediaDevices.getUserMedia({ audio: true })
